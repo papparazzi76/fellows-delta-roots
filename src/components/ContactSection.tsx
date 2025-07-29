@@ -43,7 +43,7 @@ const ContactSection = () => {
                 variant="outline" 
                 size="sm"
                 className="border-fellows-gold text-fellows-gold hover:bg-fellows-gold hover:text-fellows-deep-black w-full"
-                onClick={() => window.open('https://instagram.com/fellows_bluesband', '_blank')}
+                onClick={() => window.open('https://www.instagram.com/fellows_bluesband/', '_blank')}
               >
                 @fellows_bluesband
               </Button>
@@ -77,7 +77,7 @@ const ContactSection = () => {
                 variant="outline" 
                 size="sm"
                 className="border-fellows-gold text-fellows-gold hover:bg-fellows-gold hover:text-fellows-deep-black w-full"
-                onClick={() => window.open('https://fellowstheband.bandcamp.com', '_blank')}
+                onClick={() => window.open('https://fellowstheband.bandcamp.com/', '_blank')}
               >
                 fellowstheband
               </Button>
