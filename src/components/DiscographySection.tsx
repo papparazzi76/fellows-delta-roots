@@ -1,48 +1,48 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import bluesRecordingCover from "@/assets/blues-recording.png";
+import sesionesDeltaVol3Cover from "@/assets/sesiones-delta-vol3.png";
+import guadarramaCover from "@/assets/guadarrama.png";
+import sesionesDeltaCover from "@/assets/sesiones-delta.png";
+import conquerMoonCover from "@/assets/conquer-moon.png";
+import afterSaturnCover from "@/assets/after-saturn.png";
 
 const albums = [
   {
     title: "Blues Recording",
     year: "2025",
     description: "Un regreso crudo a la raíz, grabado en una sola noche en Estudio Meridiano. Blues eléctrico de altos vuelos.",
-    coverColor: "from-gray-900 to-gray-700",
-    textColor: "text-white"
+    cover: bluesRecordingCover
   },
   {
     title: "Sesiones Delta Vol. 3",
     year: "2021",
     description: "Guitarra, armónica y voz, sin trampa ni cartón. Una sesión directa al alma desde La Leñera.",
-    coverColor: "from-yellow-600 to-yellow-800",
-    textColor: "text-black"
+    cover: sesionesDeltaVol3Cover
   },
   {
     title: "Guadarrama",
     year: "2020",
     description: "Sonidos experimentales y texturas atmosféricas que exploran nuevos territorios musicales.",
-    coverColor: "from-pink-600 to-green-600",
-    textColor: "text-white"
+    cover: guadarramaCover
   },
   {
     title: "Sesiones Delta",
     year: "2017",
     description: "Las primeras grabaciones que definieron el sonido único de Fellows en el panorama nacional.",
-    coverColor: "from-gray-800 to-gray-600",
-    textColor: "text-white"
+    cover: sesionesDeltaCover
   },
   {
     title: "The Conquer of the Moon",
     year: "2016", 
     description: "Un viaje sonoro por territorios del blues, el folk y el minimalismo eléctrico.",
-    coverColor: "from-orange-800 to-red-900",
-    textColor: "text-white"
+    cover: conquerMoonCover
   },
   {
     title: "After Saturn",
     year: "2014",
     description: "El álbum debut que marcó el inicio del camino musical de Fellows.",
-    coverColor: "from-red-800 to-yellow-600",
-    textColor: "text-black"
+    cover: afterSaturnCover
   }
 ];
 
@@ -66,17 +66,12 @@ const DiscographySection = () => {
             >
               <CardContent className="p-0">
                 {/* Album Cover */}
-                <div className={`h-80 bg-gradient-to-br ${album.coverColor} relative overflow-hidden`}>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <h3 className={`text-3xl font-playfair font-bold ${album.textColor} mb-2`}>
-                        FELLOWS
-                      </h3>
-                      <h4 className={`text-xl font-source ${album.textColor} opacity-90`}>
-                        {album.title}
-                      </h4>
-                    </div>
-                  </div>
+                <div className="h-80 relative overflow-hidden">
+                  <img 
+                    src={album.cover} 
+                    alt={`Portada del álbum ${album.title}`}
+                    className="w-full h-full object-cover"
+                  />
                   
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex items-center justify-center">
