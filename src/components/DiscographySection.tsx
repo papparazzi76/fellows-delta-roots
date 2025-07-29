@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import bluesRecordingCover from "@/assets/blues-recording.png";
-import sesionesDeltaVol3Cover from "@/assets/sesiones-delta-vol3.png";
-import guadarramaCover from "@/assets/guadarrama.png";
-import sesionesDeltaCover from "@/assets/sesiones-delta.png";
-import conquerMoonCover from "@/assets/conquer-moon.png";
-import afterSaturnCover from "@/assets/after-saturn.png";
+import bluesRecordingCover from "@/assets/album-blues-recording.jpg";
+import sesionesDeltaVol3Cover from "@/assets/album-sesiones-delta-vol-3.jpg";
+import guadarramaCover from "@/assets/album-guadarrama.jpg";
+import sesionesDeltaCover from "@/assets/album-sesiones-delta.jpg";
+import conquerMoonCover from "@/assets/album-the-conquer-of-the-moon.jpg";
+import afterSaturnCover from "@/assets/album-after-saturn.jpg";
 
 const albums = [
   {
