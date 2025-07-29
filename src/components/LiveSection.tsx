@@ -24,11 +24,33 @@ const LiveSection = () => {
                 <em className="text-fellows-bronze"> puro, eléctrico y honesto</em>.
               </p>
               
-              <div className="bg-fellows-charcoal p-6 rounded-lg border-l-4 border-fellows-gold">
-                <p className="text-fellows-gold font-semibold mb-2">🎥 Mira el vídeo:</p>
-                <p className="text-fellows-warm-white">
-                  📺 <strong>«My Babe is Gone»</strong> – directo en La Leñera
-                </p>
+              <div className="bg-fellows-charcoal rounded-lg border border-fellows-gold/20 overflow-hidden group cursor-pointer hover:border-fellows-gold/40 transition-all duration-300">
+                <div className="p-6">
+                  <p className="text-fellows-gold font-semibold mb-2">🎥 Mira el vídeo:</p>
+                  <p className="text-fellows-warm-white mb-4">
+                    📺 <strong>«My Babe is Gone»</strong> – directo en La Leñera
+                  </p>
+                  <Button 
+                    className="btn-golden w-full"
+                    onClick={() => window.open('https://www.youtube.com/watch?v=jHZib5sFZvk', '_blank')}
+                  >
+                    ▶️ Ver en YouTube
+                  </Button>
+                </div>
+                
+                {/* YouTube embed on hover */}
+                <div className="h-0 group-hover:h-64 transition-all duration-500 overflow-hidden">
+                  <iframe
+                    width="100%"
+                    height="256"
+                    src="https://www.youtube.com/embed/jHZib5sFZvk?autoplay=0&mute=1"
+                    title="Fellows - My Babe is Gone (Live)"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
